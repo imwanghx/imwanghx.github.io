@@ -56,10 +56,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -68,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python,">
 
 
 
@@ -79,17 +75,23 @@
 
 
 
-<meta name="description" content="Nerve Settle">
+<meta name="description" content="看见好多次if name == ‘main’:    ，一直是按照C语言-main函数作为程序的入口理解的,后来上网查了一下发现自己错的很离谱。Python作为脚本语言，不需要像编译行型语言那样先将程序编译成二进制再运行，而是动态的逐行解释运行，也就是从第一行语句开始运行，没有统一入口。">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wanghx">
+<meta property="og:title" content="python中的if __name__ == &#39;main&#39;:作用">
 <meta property="og:url" content="http://yoursite.com/2019/05/17/wanghx/index.html">
 <meta property="og:site_name" content="superwanghx">
-<meta property="og:description" content="Nerve Settle">
+<meta property="og:description" content="看见好多次if name == ‘main’:    ，一直是按照C语言-main函数作为程序的入口理解的,后来上网查了一下发现自己错的很离谱。Python作为脚本语言，不需要像编译行型语言那样先将程序编译成二进制再运行，而是动态的逐行解释运行，也就是从第一行语句开始运行，没有统一入口。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-17T07:56:45.800Z">
+<meta property="og:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3ko4mecnej308w01ldfl.jpg">
+<meta property="og:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kohuyqaoj30ab00zdfl.jpg">
+<meta property="og:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kp0hvfprj309202c0si.jpg">
+<meta property="og:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kp30ud6lj30aa01ogld.jpg">
+<meta property="og:updated_time" content="2019-06-04T12:29:25.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wanghx">
-<meta name="twitter:description" content="Nerve Settle">
+<meta name="twitter:title" content="python中的if __name__ == &#39;main&#39;:作用">
+<meta name="twitter:description" content="看见好多次if name == ‘main’:    ，一直是按照C语言-main函数作为程序的入口理解的,后来上网查了一下发现自己错的很离谱。Python作为脚本语言，不需要像编译行型语言那样先将程序编译成二进制再运行，而是动态的逐行解释运行，也就是从第一行语句开始运行，没有统一入口。">
+<meta name="twitter:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3ko4mecnej308w01ldfl.jpg">
 
 
 
@@ -125,7 +127,7 @@
 
 
 
-  <title>wanghx | superwanghx</title>
+  <title>python中的if __name__ == 'main':作用 | superwanghx</title>
   
 
 
@@ -326,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">wanghx</h1>
+          <h1 class="post-title" itemprop="name headline">python中的if __name__ == 'main':作用</h1>
         
 
         <div class="post-meta">
@@ -366,7 +368,7 @@
 
           
           
-             <span id="/2019/05/17/wanghx/" class="leancloud_visitors" data-flag-title="wanghx">
+             <span id="/2019/05/17/wanghx/" class="leancloud_visitors" data-flag-title="python中的if __name__ == 'main':作用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -396,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0 字
+                  479 字
                 </span>
               
 
@@ -433,7 +435,16 @@
       
 
       
-        
+        <p>看见好多次if <strong>name</strong> == ‘main’:    ，一直是按照C语言-main函数作为程序的入口理解的,后来上网查了一下发现自己错的很离谱。Python作为脚本语言，不需要像编译行型语言那样先将程序编译成二进制再运行，而是动态的逐行解释运行，也就是从第一行语句开始运行，没有统一入口。</p>
+<a id="more"></a>
+<h2 id="start"><a href="#start" class="headerlink" title="start"></a>start</h2><h3 id="代码功能"><a href="#代码功能" class="headerlink" title="代码功能"></a>代码功能</h3><p>一个python的文件有两种使用方法，1、可以被直接运行，2、作为模块（也就是库），被其他.py文件导入。if <strong>name</strong> == ‘main’:的作用就是控制这两种方法代码的执行情况。if <strong>name</strong> == ‘main’:下的代码只有在第一种方法（即作为脚本直接运行）的时候，才会执行，import到其他脚本（.py)中时不会执行的。</p>
+<p>例子，在test.py中写入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;I&apos;m the first&quot;)</span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    print(&quot;I&apos;m the second&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>执行test.py,结果如下：<br><img src="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3ko4mecnej308w01ldfl.jpg" alt></p>
+<p>可以成功print两行字符串。即，<font color="red">if <strong>name</strong> == ‘main’:语句之前和之后的代码都被执行<br></font><br>新建import_test.py的脚本，输入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import test</span><br></pre></td></tr></table></figure></p>
+<p>执行结果如下：<br><img src="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kohuyqaoj30ab00zdfl.jpg" alt><br>只输出了第一行的字符串。即，if <strong>name</strong> == ‘main’:语句之前的被执行，之后的没有被执行。</p>
+<h3 id="运行原理"><a href="#运行原理" class="headerlink" title="运行原理"></a>运行原理</h3><p>每个python文件都包含内置变量<strong>name</strong>,当文件被直接运行的时候<strong>name</strong>为main,也相当于当前的文件名（包含后缀.py）;如果被作为模块import到其他文件（.py）中，则<strong>name</strong>为模块名称，不满足if <strong>name</strong> == ‘main’:这个条件，所以无法执行后面的代码。</p>
+<p>我们在test.py的if <strong>name</strong> == ‘main’:之前加入print (<strong>name</strong>),将<strong>name</strong>打印出来：<br><img src="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kp0hvfprj309202c0si.jpg" alt><br>可以看出来，此时<strong>name</strong>的值为main。<br>再执行import_test.py:<br><img src="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3kp30ud6lj30aa01ogld.jpg" alt><br>可以看出此时的<strong>name</strong>的值为test,因此不满足if <strong>name</strong> == ‘main’，所以不执行。</p>
+
       
     </div>
     
@@ -442,11 +453,28 @@
 
     
 
+<!--在每篇文章末尾统一添加“本文结束”标记-->
+    <div>
+         
+             ﻿<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+         
+    </div>
+
     
 
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+        </div>
       
 
       
@@ -520,8 +548,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -546,6 +583,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -582,6 +628,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#start"><span class="nav-number">1.</span> <span class="nav-text">start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码功能"><span class="nav-number">1.1.</span> <span class="nav-text">代码功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行原理"><span class="nav-number">1.2.</span> <span class="nav-text">运行原理</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -605,15 +667,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -807,7 +863,7 @@
         appId: 'bXkTNnC9fEdaWOFSC6Tf9wue-gzGzoHsz',
         appKey: 'V2Ehz3HFyjl5sulJLWkPy6Az',
         placeholder: 'Just go go',
-        avatar:'mm',
+        avatar:'retro',
         guest_info:guest,
         pageSize:'10' || 10,
     });
