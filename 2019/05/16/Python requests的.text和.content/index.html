@@ -75,17 +75,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="description" content="在学习Python爬虫的时候遇到的问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/05/16/hello-world/index.html">
+<meta property="og:title" content="Python requests的.text和.content的使用区别">
+<meta property="og:url" content="http://yoursite.com/2019/05/16/Python requests的.text和.content/index.html">
 <meta property="og:site_name" content="superwanghx">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="在学习Python爬虫的时候遇到的问题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-18T03:44:02.976Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/11/10/Muj1dH.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/11/10/MujjmD.png">
+<meta property="og:updated_time" content="2019-11-10T09:56:58.978Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="Python requests的.text和.content的使用区别">
+<meta name="twitter:description" content="在学习Python爬虫的时候遇到的问题">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/11/10/Muj1dH.md.png">
 
 
 
@@ -115,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/16/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/16/Python requests的.text和.content/">
 
 
 
 
 
-  <title>Hello World | superwanghx</title>
+  <title>Python requests的.text和.content的使用区别 | superwanghx</title>
   
 
 
@@ -305,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/Python requests的.text和.content/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wanghx">
@@ -322,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Python requests的.text和.content的使用区别</h1>
         
 
         <div class="post-meta">
@@ -353,8 +356,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/05/16/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/16/hello-world/" itemprop="commentCount"></span>
+                <a href="/2019/05/16/Python requests的.text和.content/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/16/Python requests的.text和.content/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -362,7 +365,7 @@
 
           
           
-             <span id="/2019/05/16/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2019/05/16/Python requests的.text和.content/" class="leancloud_visitors" data-flag-title="Python requests的.text和.content的使用区别">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -392,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  73 字
+                  513 字
                 </span>
               
 
@@ -429,15 +432,11 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>在学习Python爬虫的时候遇到的问题<br><a id="more"></a><br><a href="https://imgchr.com/i/Muj1dH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/11/10/Muj1dH.md.png" alt="Muj1dH.md.png"></a><br><img src="https://s2.ax1x.com/2019/11/10/MujjmD.png" alt="MujjmD.png"></p>
+<p>TypeError: a bytes-like object is required, not ‘str’<br>将.text改成.content<br>resp.text返回的是Unicode型的数据。<br>resp.content返回的是bytes型也就是二进制的数据。</p>
+<p>requests对象的get和post方法都会返回一个Response对象，这个对象里面存的是服务器返回的所有信息，包括响应头，响应状态码等。其中返回的网页部分会存在.content和.text两个对象中。<br>.content中间存的是字节码 .text存的是.content编码后的字符串<br>一般来说 .text直接用比较方便 返回的是字符串 但是有时候会解析不正常导致<br>返回的是一堆乱码这时用.content.decode(‘utf-8’)就可以使其显示正常。<br>总的来说.text是现成的字符串，.content还要编码，但是.text不是所有时候显示都正常，这是就需要用.content进行手动编码。<br>对requests获取的原始数据，有两种获取形式，一个是r.content一个是r.text。<br>二者的区别在于content返回的是byte型数据，而text返回的是Unicode数据，也就是说text对原始数据进行的特殊的编码，而这个编码方式是基于对原始数据的猜测(响应头)，<br>text一般用于返回的文本<br>content的一般用于对返回的其他数据类型<br>但是对于某些网站的中文用text可能会导致返回乱码，所以最好是使用content然后自己进行重新编码。</p>
+<p>最终结论是：text 返回的是unicode 型的数据，一般是在网页的header中定义的编码形式。<br>content返回的是bytes，二级制型的数据。<br>也就是说你如果想要提取文本就用text<br>但是如果你想要提取图片、文件，就要用到content<br>举例说明:<br><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">例如下载并保存一张图片</span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">jpg_url = <span class="string">'http://img2.niutuku.com/1312/0804/0804-niutuku.com-27840.jpg'</span></span><br><span class="line"> </span><br><span class="line">content = requests.<span class="keyword">get</span>(jpg_url).content</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'demo.jpg'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> fp:</span><br></pre></td></tr></table></figure></p>
+<p>参考链接: <a href="https://blog.csdn.net/weixin_40332685/article/details/81080069" target="_blank" rel="noopener">Writing</a></p>
 
       
     </div>
@@ -479,7 +478,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/17/wanghx/" rel="prev" title="python中的if __name__ == 'main':作用">
+              <a href="/2019/05/17/Python的if_name/" rel="prev" title="python中的if __name__ == 'main':作用">
                 python中的if __name__ == 'main':作用 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -536,17 +535,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -563,7 +553,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -576,7 +566,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -615,22 +605,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
